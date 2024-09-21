@@ -12,8 +12,6 @@ var date = document.getElementById("information-2");
 var wish = document.querySelector(".wish");
 
 add_event.addEventListener("click", function () {
-    console.log('hello');
-    alert("hello");
     overlay.style.display = "block";
     fun.style.display = "block";
 
