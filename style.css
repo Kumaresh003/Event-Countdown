@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merienda:wght@300..900&family=Shadows+Into+Light&display=swap');
+
+* {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+p {
+    font-size: 15px;
+}
+
+.wish {
+    font-family: "Merienda", cursive;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.box h2 {
+    font-size: 20px;
+}
+
+.box small {
+    font-size: 10px;
+}
+
+#add_event {
+    position: fixed;
+    bottom: 100px;
+    padding: 5px;
+    background: transparent;
+    color: #fff;
+    box-shadow: 2px 2px 2px white;
+}
+
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+
+}
+
+.event {
+    background: blueviolet;
+    opacity: 0.8;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    width: 40%;
+    position: absolute;
+    top: center;
+    left: center;
+    z-index: 2;
+    padding: 40px;display: none;
+}
+
+.event form input {
+    width: 100%;
+    background: transparent;
+    color: #fff;
+    margin: 5px;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    border-bottom: 2px #fff solid;
+}
+
+.event form input:focus {
+    outline: none;
+}
+
+.event form input::placeholder{
+    color: #fff;
+}
+
+#save {
+    padding: 5px;
+    margin: 10px;
+    background: transparent;
+    color: #fff;
+    box-shadow: 2px 2px 2px white;
+}
+
+#cancel {
+    padding: 5px;
+    margin: 10px;
+    background: transparent;
+    color: #fff;
+    box-shadow: 2px 2px 2px white;
+}
+
+@media screen and (min-width: 576px) {
+    .wish {
+        font-size: 70px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .box h2 {
+        font-size: 25px;
+    }
+
+    .box small {
+        font-size: 15px;
+    }
+
+    .box {
+        width: 80px;
+        height: 74px;
+        text-align: center;
+    }
+
+    #add_event {
+        position: fixed;
+        bottom: 80px;
+        padding: 8px;
+        background: transparent;
+        color: #fff;
+        box-shadow: 2px 2px 2px white;
+    }
+
+    #save {
+        padding: 8px;
+        margin: 12px;
+    }
+
+    #cancel {
+        padding: 8px;
+        margin: 12px;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .wish {
+        font-size: 100px;
+    }
+
+    p {
+        font-size: 25px;
+    }
+
+    .box h2 {
+        font-size: 30px;
+    }
+
+    .box small {
+        font-size: 20px;
+    }
+
+    .box {
+        width: 130px;
+        height: 104px;
+        text-align: center;
+    }
+
+    #add_event {
+        position: fixed;
+        bottom: 50px;
+        padding: 10px;
+        background: transparent;
+        color: #fff;
+        box-shadow: 2px 2px 2px white;
+    }
+
+    #save {
+        padding: 8px;
+        margin: 12px;
+    }
+
+    #cancel {
+        padding: 8px;
+        margin: 12px;
+    }
+}
